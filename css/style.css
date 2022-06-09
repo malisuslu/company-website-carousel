@@ -833,15 +833,20 @@ nav a:hover, nav a:focus, nav a:active {
   color: #A9508B !important;
 }
 
-@media screen and (max-width: 924px) {
+@media screen and (max-width: 600px) {
   .part4 p {
     display: none;
   }
 }
-@media screen and (max-width: 575px) {
+@media screen and (min-width: 576px) {
   .carousel-indicators ul {
-    top: 5% !important;
-    left: calc((100vw - 100%) / 2) !important;
+    bottom: calc(82vh - 18px) !important;
+    right: 1% !important;
+  }
+}
+@media screen and (max-width: 575px) {
+  .part1 div {
+    padding-bottom: 1.5rem !important;
   }
 }
 .part1, .part3, .part5 {
@@ -865,23 +870,26 @@ nav a:hover, nav a:focus, nav a:active {
   text-align: justify;
 }
 
+.carousel-indicators {
+  margin: 0 !important;
+}
 .carousel-indicators ul {
   list-style-type: none;
   display: flex !important;
   justify-content: center !important;
-  position: fixed;
-  padding: 0;
-  margin: 0;
-  top: 2.4%;
-  right: 1%;
+  position: absolute !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  bottom: calc(82vh - 36px);
 }
 .carousel-indicators ul li {
-  width: 5rem !important;
-  height: 2rem !important;
-  margin: 0 0.5rem !important;
+  width: 6rem !important;
+  height: 1rem !important;
+  margin: 0 !important;
+  padding: 0 !important;
   text-indent: 0 !important;
   text-align: center !important;
-  line-height: 30px !important;
+  line-height: 1rem !important;
   font-size: 1rem !important;
   font-weight: bold !important;
   color: #fff !important;
@@ -897,6 +905,10 @@ nav a:hover, nav a:focus, nav a:active {
 
 .carousel-inner {
   overflow-x: hidden !important;
+}
+
+.carousel button {
+  z-index: 9 !important;
 }
 
 body {
