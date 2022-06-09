@@ -179,6 +179,18 @@
             interval: int
         // wrap: false
         });
+
+        // if finger swipe left, go to next slide
+        myCarousel.addEventListener('swiped-left', function(e) {
+            carousel.next();
+        });
+
+        // if finger swipe right, go to previous slide
+        myCarousel.addEventListener('swiped-right', function(e) {
+            carousel.prev();
+        });
     </script>
+
+    <script src="./scr/swipe.min.js"></script>
 </body>
 </html>
