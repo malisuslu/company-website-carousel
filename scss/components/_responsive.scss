@@ -1,0 +1,18 @@
+@use '../abstracts' as v;
+
+@media screen and (max-width: 924px) {
+    .part4 {
+        p {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .carousel-indicators {
+        ul {
+            top: 5% !important;
+            left: calc((100vw - 100%) / 2) !important;
+        }
+    }
+}
