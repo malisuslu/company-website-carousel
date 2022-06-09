@@ -40,10 +40,10 @@
                 </ul>
             </div>
 
-            <div class="carousel-inner h-100">
+            <div class="carousel-inner h-100 overflow-auto">
 
                 <div class="carousel-item active h-100">
-                    <div class="part2 h-52 row align-content-center text-center text-white">
+                    <div class="part2 h-49 row align-content-center text-center text-white">
                         <h1 class="display-3 fw-bold my-3">Professional Web Design</h1>
                         <p class="fw-bold">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae culpa nam optio quas soluta. Ipsum voluptatum facilis laboriosam praesentium itaque.</p>
                     </div>
@@ -85,23 +85,16 @@
                 </div>
 
                 <div class="carousel-item h-13 h-100">
-                    <div class="part3 row row-cols-1 row-cols-sm-2 h-10">
-                        <div class="my-auto text-center text-sm-start">Subscribe To Our Newsletter</div>
-                        <form action="#" class="my-auto text-center text-sm-end">
-                            <input type="text" placeholder="Enter your e-mail.." class="align-middle w-25">
-                            <button type="submit" class="btn btn-danger btn-sm w-20 align-self-center">Subscribe</button>
-                        </form>
-                    </div>
             
-                    <div class="part6 h-67 row p-2 overflow-auto">
+                    <div class="part6 row p-2 overflow-auto">
                         <div class="col-12 col-md-8">
                             <h5 class="px-3">About Us</h5>
-                            <p class="p-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo soluta ipsum impedit molestiae, dolorum magni inventore reiciendis, vel nobis suscipit, fuga optio nesciunt excepturi fugit eligendi? Eos consequuntur tempora repellendus atque adipisci deleniti? Corrupti unde eveniet nam aliquam aperiam, odio laborum nemo nesciunt ut, assumenda eligendi eos ipsa illum tempore. Voluptates, nesciunt quos! Molestiae eos, eaque hic nobis fugiat odio!</p>
-                            <p class="dark p-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas laborum id eveniet possimus, ut eligendi, veritatis quidem est harum doloribus dolorum debitis. Optio autem harum obcaecati quas, voluptatem voluptatibus distinctio placeat illum quos excepturi deserunt esse sed cumque ipsa, iusto, eveniet vero porro quibusdam explicabo beatae! Nostrum architecto, sint non maiores doloremque soluta incidunt ea ullam voluptatibus, obcaecati quam laudantium cumque alias voluptatum. Aut aliquid rerum in vero expedita molestias, vitae obcaecati quae voluptas numquam quibusdam tempore eligendi, explicabo iure?</p>
+                            <p class="px-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo soluta ipsum impedit molestiae, dolorum magni inventore reiciendis, vel nobis suscipit, fuga optio nesciunt excepturi fugit eligendi? Eos consequuntur tempora repellendus atque adipisci deleniti? Corrupti unde eveniet nam aliquam aperiam, odio laborum nemo nesciunt ut, assumenda eligendi eos ipsa illum tempore. Voluptates, nesciunt quos! Molestiae eos, eaque hic nobis fugiat odio!</p>
+                            <p class="dark px-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas laborum id eveniet possimus, ut eligendi, veritatis quidem est harum doloribus dolorum debitis. Optio autem harum obcaecati quas, voluptatem voluptatibus distinctio placeat illum quos excepturi deserunt esse sed cumque ipsa, iusto, eveniet vero porro quibusdam explicabo beatae! Nostrum architecto, sint non maiores doloremque soluta incidunt ea ullam voluptatibus, obcaecati quam laudantium cumque alias voluptatum. Aut aliquid rerum in vero expedita molestias, vitae obcaecati quae voluptas numquam quibusdam tempore eligendi, explicabo iure?</p>
                         </div>
             
                         <div class="col-12 col-md-4 h-auto">
-                            <div class="dark p-3">
+                            <div class="dark px-3">
                                 <h5>What We Do</h5>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis aperiam suscipit aliquam maiores maxime eveniet impedit dolore nesciunt est blanditiis ut, a rem quaerat recusandae incidunt dolorum corporis tempore quas sapiente? Esse qui dolores quos officiis vitae ipsam sapiente minima voluptatum praesentium culpa aperiam, adipisci labore nostrum. Animi, nihil nobis.</p>
                                 </div>
@@ -110,16 +103,9 @@
                 </div>
 
                 <div class="carousel-item h-35 h-100">
-                    <div class="part3 row row-cols-1 row-cols-sm-2 h-10">
-                        <div class="my-auto text-center text-sm-start">Subscribe To Our Newsletter</div>
-                        <form action="#" class="my-auto text-center text-sm-end">
-                            <input type="text" placeholder="Enter your e-mail.." class="align-middle w-25">
-                            <button type="submit" class="btn btn-danger btn-sm w-20 align-self-center">Subscribe</button>
-                        </form>
-                    </div>
             
-                    <div class="part7 h-67 row p-2 overflow-auto">
-                        <div class="col-12 col-lg-8">
+                    <div class="part7 row p-2">
+                        <div class="col-12 col-lg-8 overflow-auto">
                             <h5 class="fw-bold py-2">Services</h5>
                             <div class="border-2 my-2 border p-4 h-30 bg-light">
                                 <h5 class="fw-bold py-2">Website Design</h5>
@@ -188,7 +174,7 @@
     <script> // Script for the carousel
         let myCarousel = document.querySelector('.carousel')
         let int = 0;
-        screen.width <= 575 ? int = 15000 : int = 5000;
+        screen.width <= 575 ? int = 999000 : int = 999000;
             let carousel = new bootstrap.Carousel(myCarousel, {
             interval: int
         // wrap: false
