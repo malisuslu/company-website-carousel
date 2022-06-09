@@ -895,6 +895,10 @@ nav a:hover, nav a:focus, nav a:active {
   transition: transform 1s ease-in-out;
 }
 
+.carousel-inner {
+  overflow-x: hidden !important;
+}
+
 body {
   height: 100vh;
 }
